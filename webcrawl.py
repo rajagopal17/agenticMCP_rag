@@ -10,7 +10,7 @@ from google import genai
 async def main():
     async with AsyncWebCrawler() as crawler:
         result = await crawler.arun(
-            url="https://economictimes.indiatimes.com/markets",
+            url="https://economictimes.indiatimes.com/markets/stocks/news",
         )
         
         cresult = result.markdown
